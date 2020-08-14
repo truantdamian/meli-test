@@ -1,0 +1,93 @@
+@import './../../sass/variables.scss';
+@import './../../sass/mixin.scss';
+.detail{
+    .section-image
+    {
+        flex:1;
+
+        img{
+            width: 680px;
+            padding: 32px 0 32px 32px;
+        }
+    }
+
+    .section-primary{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .section-description {
+        padding: 0 32px 32px 32px;
+        font-size: 16px;
+        color:$fontterciary;
+        overflow: auto;
+        .title{
+            margin-bottom: 32px;
+            color:$fontprimary;
+        }
+    }
+
+    .section-title{
+
+        padding: 32px 32px 1em 1em;
+        flex:1;
+
+        .title{
+            font-size: 24px;
+            margin-bottom: 32px;
+            color:$fontprimary;
+
+        }
+
+        .price{
+            font-size: 46px;
+            margin-bottom: 32px;
+            color:$fontprimary;
+
+            sup{
+                font-size:25px;
+            }
+        }
+
+        .condition {
+            margin-bottom: 16px;
+            color:$fontsecondary;
+        }
+
+        .btn-buy{
+            background-color: $buttonprimary;
+            @include border-radius (3px,3px,3px,3px);
+            border: 0;
+            color: $background;
+            padding:1em;
+            width: 100%;
+            margin-right: 32px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .detail{
+        .section-image
+        {
+            img{
+                width: 100%;
+                padding:0;
+            }
+        }
+        .section-primary{
+            flex-direction: column;
+        }
+
+        .section-title{
+            padding: 1em;
+        }
+    }
+}
+
+

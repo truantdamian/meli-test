@@ -1,0 +1,30 @@
+@mixin place-holder-color($color){
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $color;
+        opacity: 1; /* Firefox */
+    }
+        
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $color;
+    }
+        
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $color;
+    }
+  }
+
+
+  @mixin border-radius ($topleft,$topright,$bottomright,$bottomleft){
+    -webkit-border-top-left-radius: $topleft;
+    -webkit-border-top-right-radius:$topright;
+    -webkit-border-bottom-right-radius: $bottomright;
+    -webkit-border-bottom-left-radius: $bottomleft;
+    -moz-border-radius-topleft: $topleft;
+    -moz-border-radius-topright: $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft: $bottomleft;
+    border-top-left-radius: $topleft;
+    border-top-right-radius: $topright;
+    border-bottom-right-radius: $bottomright;
+    border-bottom-left-radius: $bottomleft;
+  }

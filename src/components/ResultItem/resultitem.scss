@@ -1,0 +1,56 @@
+@import './../../sass/mixin.scss';
+@import './../../sass/variables.scss';
+.item {
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    border-bottom: 1px solid $background;
+    margin: 0 1em  0 1em;
+}
+
+.item {
+    .section-image{   
+
+        padding:16px;
+
+        img {
+            width: 180px;
+        }
+    }
+
+    .section-description{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 16px;
+        flex-wrap: wrap;
+        overflow: auto;
+        flex:1;
+    }
+    
+    .price {
+        font-size: 24px;
+        color:$fontprimary;
+        margin-bottom:32px;
+
+        sup{
+            font-size: 12px;
+        }
+    }
+    
+    .title{
+        font-size: 18px;
+        color:$fontsecondary;
+    }
+    
+    .city{
+        font-size: 12px;
+        color:$fontterciary;
+    }
+    
+    .shipping {
+        margin-left:10px;
+    }
+}
+

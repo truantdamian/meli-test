@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests in Home should  1`] = `
+<div
+  className="section-home"
+>
+  <h1>
+    Meli Challenge
+  </h1>
+  <h4>
+    Damián Truant
+  </h4>
+</div>
+`;

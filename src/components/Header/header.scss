@@ -1,0 +1,25 @@
+@import './../../sass/variables.scss';
+
+.logo{
+    margin-right: 20px;
+}
+
+header {
+    background-color:$header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.section_header{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

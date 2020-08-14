@@ -1,0 +1,42 @@
+@import './sass/mixin.scss';
+@import './sass/variables.scss';
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    min-height: 100vh;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    @include place-holder-color($fontterciary);
+}
+
+input:focus, textarea:focus, select:focus, button{
+    outline: none;
+}
+
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    width: 85%;
+}
+
+.section-result {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    @include border-radius(3px,3px,3px,3px);
+}
+
+.section-image{
+    img{
+        @include border-radius(3px,3px,3px,3px);
+    }
+}

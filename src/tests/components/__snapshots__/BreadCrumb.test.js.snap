@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests in Home should  1`] = `
+<div
+  className="breadcrumb content"
+>
+  comidas|ricas
+</div>
+`;
