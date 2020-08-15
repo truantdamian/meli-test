@@ -19,6 +19,12 @@ const AppRouter = () => {
 
                 <Route 
                     exact 
+                    path='/meli-test' 
+                    component={()=><Layout><Home/></Layout>}>
+                </Route>
+
+                <Route 
+                    exact 
                     path='/items/:id' 
                     component={()=><Layout><Detail/></Layout>}>
                 </Route>
